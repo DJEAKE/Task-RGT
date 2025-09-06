@@ -1,0 +1,23 @@
+.search-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+  width: 305px;
+}
+
+.search-form input[type="search"] {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-button {
+  width: 15px;
+  height: 15px;
+  background: url("../icons/search.svg") no-repeat center/contain;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

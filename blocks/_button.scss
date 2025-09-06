@@ -1,0 +1,61 @@
+%button-shared {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  background-color: var(--color-brown);
+}
+
+.button {
+  @extend %button-shared;
+  width: 138px;
+  border-radius: 25px;
+  gap: 8px;
+  color: var(--color-white);
+
+  &:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../icons/cart.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &.button-increase:before,
+  &.button-decrease:before {
+    content: none;
+  }
+}
+
+.button-order {
+  @extend .button;
+  background-color: var(--color-gray);
+  color: var(--color-black);
+
+  &:before {
+    background-image: url('../icons/arrow.svg');
+  }
+}
+
+.button-increase,
+.button-decrease {
+  @extend %button-shared;
+  width: 40px;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-increase {
+  background-image: url("../icons/arrow-right.svg");
+}
+
+.button-decrease {
+  background-image: url("../icons/arrow-left.svg");
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: var(--color-white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding-top: 191px;
+}
